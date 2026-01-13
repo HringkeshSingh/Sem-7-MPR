@@ -1,0 +1,93 @@
+patient_id,age,gender,birthdate,deathdate,source,age_group,mortality,hospital_los_days,admission_type,emergency_admission,insurance,ethnicity,has_icu_stay,icu_los_days,num_procedures,num_medications,num_encounters,diagnoses,num_diagnoses,comorbidity_score,risk_level,utilization_category,high_complexity
+10006,71,f,2094-03-05,2165-08-12,mimic,elderly,1,8.8,Emergency,1,Medicare,BLACK/AFRICAN AMERICAN,1,1.6,7,54,1,"[""CARDIOVASCULAR"", ""DIABETES"", ""HYPERTENSION"", ""SEPSIS""]",4,5,critical,medium,1
+10011,36,f,2090-06-05,2126-08-28,mimic,young_adult,1,13.9,Emergency,1,Private,UNKNOWN/NOT SPECIFIED,1,13.9,2,0,1,"[""OTHER""]",1,1,low,medium,1
+10013,87,f,2038-09-03,2125-10-07,mimic,very_elderly,1,2.7,Emergency,1,Medicare,UNKNOWN/NOT SPECIFIED,1,2.6,1,36,1,"[""CARDIOVASCULAR"", ""RESPIRATORY"", ""SEPSIS""]",3,4,critical,low,1
+10017,76,f,2075-09-21,2152-09-12,mimic,elderly,1,8.1,Emergency,1,Medicare,WHITE,1,2.1,2,105,1,"[""CARDIOVASCULAR"", ""DIABETES"", ""HYPERTENSION"", ""RESPIRATORY"", ""SEPSIS"", ""TRAUMA""]",6,8,critical,medium,1
+10019,48,m,2114-06-20,2163-05-15,mimic,middle_aged,1,0.6,Emergency,1,Medicare,WHITE,1,1.3,4,99,1,"[""HYPERTENSION"", ""RENAL"", ""RESPIRATORY"", ""SEPSIS""]",4,5,critical,low,1
+10027,82,f,2108-01-15,2190-09-14,mimic,very_elderly,1,12.3,Elective,0,Medicare,WHITE,1,7.3,12,102,1,"[""CARDIOVASCULAR"", ""DIABETES"", ""HYPERTENSION"", ""RENAL""]",4,4,critical,high,1
+10029,79,m,2061-04-10,2140-09-21,mimic,elderly,1,10.1,Emergency,1,Medicare,WHITE,1,2.3,8,60,1,"[""CARDIOVASCULAR"", ""HYPERTENSION"", ""RENAL"", ""SEPSIS""]",4,5,critical,medium,1
+10032,88,m,2050-03-29,2138-05-21,mimic,very_elderly,1,12.8,Emergency,1,Medicare,WHITE,1,3.7,4,77,1,"[""CANCER"", ""CARDIOVASCULAR"", ""RENAL"", ""TRAUMA""]",4,6,critical,medium,1
+10033,82,f,2051-04-21,2133-09-09,mimic,very_elderly,1,3.5,Emergency,1,Medicare,WHITE,1,1.1,0,32,1,"[""CARDIOVASCULAR"", ""DIABETES"", ""HYPERTENSION"", ""RENAL""]",4,4,critical,medium,1
+10035,79,m,2053-04-13,2133-03-30,mimic,elderly,1,4.1,Elective,0,Medicare,WHITE,1,1.4,2,35,1,"[""CARDIOVASCULAR"", ""NEUROLOGICAL""]",2,3,high,medium,0
+10038,91,f,2056-01-27,2147-03-17,mimic,very_elderly,1,11.8,Emergency,1,Medicare,WHITE,1,3.4,3,83,1,"[""CARDIOVASCULAR"", ""HYPERTENSION"", ""RENAL"", ""SEPSIS""]",4,5,critical,medium,1
+10040,88,f,2061-10-23,2150-09-05,mimic,very_elderly,1,4.2,Emergency,1,Medicare,UNKNOWN/NOT SPECIFIED,1,2.1,8,41,1,"[""CARDIOVASCULAR"", ""HYPERTENSION"", ""RESPIRATORY""]",3,3,high,medium,1
+10042,74,m,2076-05-06,2150-12-03,mimic,elderly,1,11.3,Emergency,1,Medicare,WHITE,1,8.1,8,96,1,"[""CARDIOVASCULAR"", ""SEPSIS""]",2,3,high,high,1
+10043,81,m,2109-04-07,2191-02-07,mimic,very_elderly,1,12.7,Emergency,1,Medicare,WHITE,1,2.0,3,81,1,"[""CARDIOVASCULAR"", ""RESPIRATORY""]",2,2,high,medium,0
+10044,81,f,2071-02-11,2152-10-20,mimic,very_elderly,1,9.0,Emergency,1,Medicare,UNKNOWN/NOT SPECIFIED,1,4.6,2,76,1,"[""CANCER"", ""CARDIOVASCULAR"", ""HYPERTENSION""]",3,4,critical,medium,1
+10045,68,f,2061-03-25,2129-12-01,mimic,elderly,1,7.1,Emergency,1,Medicare,WHITE,1,6.3,14,209,1,"[""CARDIOVASCULAR"", ""DIABETES"", ""HYPERTENSION"", ""NEUROLOGICAL"", ""RENAL"", ""SEPSIS""]",6,8,critical,high,1
+10046,53,f,2141-03-15,2195-03-13,mimic,middle_aged,1,10.6,Emergency,1,Medicaid,WHITE,1,2.9,1,0,1,"[""CANCER""]",1,2,medium,low,0
+10056,83,f,2046-02-27,2129-09-16,mimic,very_elderly,1,4.6,Emergency,1,Medicare,WHITE,1,1.0,1,35,1,"[""CARDIOVASCULAR"", ""RENAL"", ""SEPSIS""]",3,4,critical,medium,1
+10059,69,m,2081-01-03,2150-08-29,mimic,elderly,1,7.0,Emergency,1,Medicare,WHITE,1,8.9,10,95,2,"[""HYPERTENSION"", ""RENAL"", ""SEPSIS""]",3,4,high,high,1
+10061,76,f,2031-05-19,2108-04-03,mimic,elderly,1,25.0,Emergency,1,Medicare,WHITE,1,25.0,8,314,1,"[""CARDIOVASCULAR"", ""RENAL"", ""SEPSIS""]",3,4,critical,high,1
+10064,68,m,2058-04-23,2127-03-19,mimic,elderly,1,0.1,Emergency,1,Medicare,WHITE,1,0.2,0,15,1,"[""CARDIOVASCULAR"", ""TRAUMA""]",2,3,high,low,0
+10065,82,f,2111-07-18,2193-11-06,mimic,very_elderly,1,12.3,Elective,0,Private,WHITE,1,2.3,3,83,1,"[""CANCER"", ""HYPERTENSION"", ""RENAL"", ""SEPSIS""]",4,6,critical,medium,1
+10067,29,m,2101-06-10,2130-10-06,mimic,young_adult,1,0.0,Emergency,1,Private,OTHER,1,0.1,7,0,1,"[""CARDIOVASCULAR"", ""TRAUMA""]",2,3,medium,low,0
+10069,41,f,2146-10-23,2188-02-27,mimic,middle_aged,1,19.3,Emergency,1,Medicaid,UNKNOWN/NOT SPECIFIED,1,15.0,7,0,1,"[""CARDIOVASCULAR"", ""DIABETES"", ""NEUROLOGICAL""]",3,4,high,medium,1
+10074,85,m,2081-12-26,2167-04-24,mimic,very_elderly,1,7.7,Emergency,1,Medicare,WHITE,1,0.7,5,52,1,"[""CARDIOVASCULAR"", ""RENAL"", ""RESPIRATORY""]",3,3,critical,medium,1
+10076,68,m,2038-05-10,2107-03-30,mimic,elderly,1,8.6,Emergency,1,Medicare,ASIAN,1,7.1,6,120,1,"[""CANCER"", ""RENAL"", ""RESPIRATORY"", ""SEPSIS""]",4,6,critical,high,1
+10083,82,f,2110-03-25,2192-12-12,mimic,very_elderly,1,17.5,Emergency,1,Medicare,WHITE,1,4.6,4,98,1,"[""CARDIOVASCULAR"", ""DIABETES"", ""RENAL"", ""SEPSIS""]",4,5,critical,medium,1
+10088,78,m,2029-07-09,2107-07-20,mimic,elderly,1,5.8,Emergency,1,Private,WHITE,1,7.3,10,197,3,"[""CARDIOVASCULAR"", ""HYPERTENSION"", ""NEUROLOGICAL"", ""RENAL"", ""RESPIRATORY"", ""SEPSIS""]",6,8,critical,high,1
+10089,86,m,2046-04-18,2132-08-08,mimic,very_elderly,1,2.3,Emergency,1,Medicare,WHITE,1,2.5,1,29,1,"[""CARDIOVASCULAR"", ""HYPERTENSION"", ""NEUROLOGICAL""]",3,4,critical,low,1
+10090,30,m,2096-02-27,2126-04-06,mimic,young_adult,1,2.2,Emergency,1,Private,WHITE,1,1.1,2,32,1,"[""OTHER""]",1,1,low,low,0
+10093,87,m,2053-09-08,2141-01-26,mimic,very_elderly,1,0.8,Emergency,1,Medicare,WHITE,1,0.9,5,40,1,"[""CARDIOVASCULAR"", ""HYPERTENSION"", ""RENAL""]",3,3,high,low,1
+10098,19,f,2150-12-07,2170-12-03,mimic,young_adult,1,0.7,Emergency,1,Private,OTHER,1,0.8,4,47,1,"[""CARDIOVASCULAR"", ""TRAUMA""]",2,3,medium,low,0
+10101,72,m,2055-07-18,2128-03-24,mimic,elderly,1,2.1,Emergency,1,Government,WHITE,1,0.9,0,30,1,"[""CANCER""]",1,2,medium,low,0
+10102,70,m,2035-04-13,2105-06-11,mimic,elderly,1,12.3,Emergency,1,Medicare,WHITE,1,2.5,3,112,1,"[""OTHER""]",1,1,low,medium,0
+10104,75,f,2050-02-16,2125-05-09,mimic,elderly,1,6.8,Emergency,1,Medicare,ASIAN,1,0.7,1,57,1,"[""DIABETES"", ""HYPERTENSION"", ""RESPIRATORY""]",3,3,high,low,1
+10106,65,m,2097-12-16,2163-09-15,mimic,elderly,1,4.8,Emergency,1,Private,WHITE,1,1.9,3,41,1,"[""DIABETES"", ""HYPERTENSION"", ""RESPIRATORY""]",3,3,high,medium,1
+10111,83,f,2097-01-16,2180-02-01,mimic,very_elderly,1,17.9,Emergency,1,Medicare,BLACK/AFRICAN AMERICAN,1,11.1,7,137,1,"[""CARDIOVASCULAR"", ""DIABETES"", ""RENAL"", ""RESPIRATORY""]",4,4,critical,high,1
+10112,78,f,2069-05-05,2148-01-19,mimic,elderly,1,5.7,Urgent,0,Medicare,WHITE,1,5.7,2,32,1,"[""CARDIOVASCULAR""]",1,1,medium,medium,0
+10114,79,f,2099-03-17,2178-05-02,mimic,elderly,1,6.8,Urgent,0,Private,UNKNOWN/NOT SPECIFIED,1,4.7,6,0,1,"[""CARDIOVASCULAR"", ""DIABETES"", ""RESPIRATORY""]",3,3,high,medium,1
+10117,66,f,2072-05-05,2138-11-18,mimic,elderly,1,9.2,Emergency,1,Private,UNKNOWN/NOT SPECIFIED,1,4.5,1,50,2,"[""RENAL"", ""RESPIRATORY"", ""SEPSIS""]",3,4,critical,medium,1
+10119,84,m,2036-03-10,2120-09-18,mimic,very_elderly,1,5.3,Emergency,1,Medicare,WHITE,1,9.8,12,88,2,"[""CARDIOVASCULAR"", ""HYPERTENSION"", ""RENAL""]",3,3,high,high,1
+10120,27,m,2088-05-05,2115-05-15,mimic,young_adult,1,2.5,Emergency,1,Medicaid,UNKNOWN/NOT SPECIFIED,1,2.6,8,92,1,"[""NEUROLOGICAL"", ""RENAL"", ""SEPSIS""]",3,5,critical,medium,1
+10124,83,f,2108-12-20,2192-05-15,mimic,very_elderly,1,28.9,Emergency,1,Medicare,WHITE,1,24.6,8,315,2,"[""CARDIOVASCULAR"", ""DIABETES"", ""HYPERTENSION"", ""RENAL"", ""RESPIRATORY"", ""SEPSIS"", ""TRAUMA""]",7,9,critical,high,1
+10126,44,f,2127-06-04,2171-08-16,mimic,middle_aged,1,35.2,Emergency,1,Private,WHITE,1,35.4,22,437,1,"[""CARDIOVASCULAR"", ""RENAL"", ""SEPSIS""]",3,4,high,high,1
+10127,20,f,2181-04-19,2201-11-08,mimic,young_adult,1,22.4,Emergency,1,Private,WHITE,1,22.4,19,142,1,"[""CARDIOVASCULAR"", ""RESPIRATORY"", ""SEPSIS"", ""TRAUMA""]",4,6,critical,high,1
+10130,51,m,2109-07-08,2161-03-13,mimic,middle_aged,1,19.9,Emergency,1,Private,UNKNOWN/NOT SPECIFIED,1,1.6,6,0,1,"[""CANCER"", ""DIABETES"", ""SEPSIS""]",3,5,critical,medium,1
+10132,65,f,2058-04-23,2123-11-06,mimic,elderly,1,24.8,Emergency,1,Medicare,WHITE,1,0.8,4,122,1,"[""CANCER"", ""CARDIOVASCULAR"", ""SEPSIS""]",3,5,critical,medium,1
+40124,67,f,2063-07-05,2130-11-03,mimic,elderly,1,6.4,Emergency,1,Medicare,WHITE,1,6.2,5,140,2,"[""CANCER"", ""HYPERTENSION"", ""RENAL"", ""RESPIRATORY""]",4,5,critical,medium,1
+40177,86,m,2082-06-27,2169-05-12,mimic,very_elderly,1,5.4,Emergency,1,Medicare,WHITE,1,1.7,4,75,1,"[""CARDIOVASCULAR"", ""HYPERTENSION"", ""RENAL"", ""SEPSIS""]",4,5,critical,medium,1
+40204,76,m,2079-08-17,2156-02-08,mimic,elderly,1,7.9,Emergency,1,Medicare,BLACK/AFRICAN AMERICAN,1,0.9,1,40,1,"[""CARDIOVASCULAR"", ""DIABETES"", ""HYPERTENSION"", ""RENAL"", ""RESPIRATORY""]",5,5,critical,medium,1
+40277,83,f,2070-10-11,2154-01-22,mimic,very_elderly,1,4.7,Emergency,1,Medicare,WHITE,1,1.3,1,37,1,"[""HYPERTENSION"", ""RESPIRATORY"", ""TRAUMA""]",3,4,critical,medium,1
+40286,86,f,2110-04-02,2196-10-22,mimic,very_elderly,1,5.3,Elective,0,Medicare,WHITE,1,1.7,3,64,1,"[""CARDIOVASCULAR"", ""HYPERTENSION""]",2,2,medium,medium,0
+40304,78,m,2086-12-16,2165-01-17,mimic,elderly,1,9.7,Emergency,1,Medicare,WHITE,1,2.3,4,63,1,"[""CANCER"", ""CARDIOVASCULAR"", ""RENAL"", ""RESPIRATORY""]",4,5,critical,medium,1
+40310,41,m,2103-12-05,2144-12-31,mimic,middle_aged,1,7.0,Emergency,1,Medicaid,WHITE,1,26.8,18,893,2,"[""CARDIOVASCULAR"", ""DIABETES"", ""RENAL"", ""RESPIRATORY""]",4,4,high,high,1
+40456,89,f,2031-08-12,2120-08-13,mimic,very_elderly,1,2.9,Emergency,1,Medicare,WHITE,1,2.0,0,29,1,"[""CARDIOVASCULAR""]",1,1,medium,low,0
+40503,88,f,2097-11-14,2186-07-07,mimic,very_elderly,1,1.0,Emergency,1,Medicare,WHITE,1,1.0,3,26,1,"[""CARDIOVASCULAR"", ""DIABETES"", ""HYPERTENSION""]",3,3,high,low,1
+40595,76,f,2068-03-04,2144-10-31,mimic,elderly,1,8.9,Emergency,1,Medicare,WHITE,1,8.9,13,133,1,"[""CANCER"", ""CARDIOVASCULAR"", ""HYPERTENSION"", ""SEPSIS""]",4,6,critical,high,1
+40601,72,f,2112-01-20,2184-08-26,mimic,elderly,1,6.4,Emergency,1,Private,WHITE,1,2.5,3,77,1,"[""CARDIOVASCULAR"", ""HYPERTENSION"", ""RESPIRATORY""]",3,3,high,medium,1
+40612,86,f,2073-08-13,2159-11-25,mimic,very_elderly,1,5.4,Emergency,1,Medicare,HISPANIC OR LATINO,1,3.5,0,92,1,"[""CARDIOVASCULAR"", ""NEUROLOGICAL"", ""RESPIRATORY"", ""SEPSIS""]",4,6,critical,medium,1
+40687,81,f,2073-06-05,2155-03-12,mimic,very_elderly,1,3.5,Emergency,1,Medicare,WHITE,1,1.7,2,42,1,"[""CANCER"", ""HYPERTENSION"", ""RESPIRATORY""]",3,4,critical,medium,1
+41795,49,m,2096-07-25,2145-12-06,mimic,middle_aged,1,3.3,Emergency,1,Medicare,WHITE,1,12.1,6,254,2,"[""CARDIOVASCULAR"", ""DIABETES"", ""HYPERTENSION"", ""RESPIRATORY""]",4,4,high,medium,1
+41914,55,m,2090-11-16,2146-01-25,mimic,middle_aged,1,17.0,Emergency,1,Medicare,WHITE,1,13.0,10,86,1,"[""CARDIOVASCULAR"", ""DIABETES"", ""HYPERTENSION"", ""RENAL"", ""RESPIRATORY"", ""SEPSIS""]",6,7,critical,high,1
+41976,66,m,2136-07-28,2202-12-05,mimic,elderly,1,8.6,Emergency,1,Medicare,HISPANIC/LATINO - PUERTO RICAN,1,48.6,49,1158,15,"[""CARDIOVASCULAR"", ""DIABETES"", ""HYPERTENSION"", ""RENAL"", ""RESPIRATORY"", ""SEPSIS""]",6,7,critical,high,1
+42033,85,f,2045-10-07,2131-07-28,mimic,very_elderly,1,2.0,Emergency,1,Medicare,WHITE,1,0.9,3,20,1,"[""CARDIOVASCULAR"", ""SEPSIS""]",2,3,high,low,0
+42066,50,m,2061-06-13,2112-02-11,mimic,middle_aged,1,6.9,Emergency,1,Private,WHITE,1,5.1,1,97,1,"[""CARDIOVASCULAR"", ""NEUROLOGICAL""]",2,3,high,medium,0
+42075,80,m,2086-02-04,2166-02-26,mimic,very_elderly,1,13.3,Emergency,1,Medicare,UNABLE TO OBTAIN,1,13.4,16,161,1,"[""CANCER"", ""CARDIOVASCULAR"", ""DIABETES"", ""HYPERTENSION"", ""RENAL"", ""RESPIRATORY""]",6,7,critical,high,1
+42135,44,m,2083-09-20,2127-10-28,mimic,middle_aged,1,21.7,Emergency,1,Medicaid,AMERICAN INDIAN/ALASKA NATIVE FEDERALLY RECOGNIZED TRIBE,1,22.7,6,282,2,"[""RENAL"", ""RESPIRATORY"", ""SEPSIS""]",3,4,high,high,1
+42199,72,f,2044-06-27,2117-04-04,mimic,elderly,1,10.0,Emergency,1,Medicare,WHITE,1,5.4,4,70,1,"[""CANCER"", ""CARDIOVASCULAR"", ""DIABETES"", ""HYPERTENSION"", ""NEUROLOGICAL"", ""SEPSIS""]",6,9,critical,medium,1
+42231,88,f,2016-12-05,2105-05-18,mimic,very_elderly,1,8.4,Elective,0,Medicare,WHITE,1,1.1,3,47,1,"[""CANCER"", ""CARDIOVASCULAR"", ""HYPERTENSION"", ""SEPSIS""]",4,6,critical,medium,1
+42275,77,m,2058-08-04,2136-03-26,mimic,elderly,1,2.9,Emergency,1,Medicare,WHITE,1,0.8,0,20,1,"[""CANCER"", ""HYPERTENSION"", ""RENAL"", ""RESPIRATORY""]",4,5,critical,low,1
+42281,68,f,2051-03-23,2119-11-14,mimic,elderly,1,28.1,Emergency,1,Medicare,HISPANIC OR LATINO,1,18.8,12,230,1,"[""CARDIOVASCULAR"", ""RENAL""]",2,2,medium,high,1
+42292,66,m,2098-04-29,2165-01-16,mimic,elderly,1,3.0,Emergency,1,Private,WHITE,1,1.0,1,34,1,"[""CARDIOVASCULAR"", ""DIABETES"", ""RESPIRATORY"", ""SEPSIS""]",4,5,critical,medium,1
+42302,85,f,2074-09-29,2160-06-08,mimic,very_elderly,1,3.9,Emergency,1,Medicare,WHITE,1,1.0,0,39,1,"[""CARDIOVASCULAR"", ""DIABETES"", ""HYPERTENSION"", ""RENAL"", ""RESPIRATORY""]",5,5,critical,medium,1
+42321,80,f,2041-05-16,2122-02-28,mimic,very_elderly,1,4.8,Emergency,1,Medicare,OTHER,1,1.9,4,53,1,"[""CARDIOVASCULAR"", ""HYPERTENSION"", ""RENAL"", ""TRAUMA""]",4,5,critical,medium,1
+42346,88,f,2072-12-03,2160-12-27,mimic,very_elderly,1,0.8,Emergency,1,Medicare,WHITE,1,1.5,1,66,2,"[""CARDIOVASCULAR"", ""DIABETES"", ""HYPERTENSION"", ""RESPIRATORY""]",4,4,critical,low,1
+42367,87,f,2060-02-12,2147-11-04,mimic,very_elderly,1,32.1,Emergency,1,Medicare,WHITE,1,29.3,11,279,1,"[""CARDIOVASCULAR"", ""DIABETES"", ""NEUROLOGICAL"", ""TRAUMA""]",4,6,critical,high,1
+42412,87,m,2079-01-29,2166-05-30,mimic,very_elderly,1,6.1,Emergency,1,Medicare,WHITE,1,1.7,2,45,1,"[""CARDIOVASCULAR"", ""DIABETES"", ""HYPERTENSION"", ""RENAL"", ""RESPIRATORY"", ""TRAUMA""]",6,7,critical,medium,1
+42430,80,m,2061-12-10,2142-11-30,mimic,very_elderly,1,3.6,Emergency,1,Medicare,WHITE,1,2.8,3,76,1,"[""CARDIOVASCULAR"", ""DIABETES"", ""HYPERTENSION"", ""NEUROLOGICAL"", ""RESPIRATORY""]",5,6,critical,medium,1
+43735,82,m,2046-07-05,2128-11-09,mimic,very_elderly,1,4.8,Emergency,1,Medicare,WHITE,1,2.5,2,63,1,"[""CARDIOVASCULAR"", ""DIABETES"", ""HYPERTENSION"", ""RENAL"", ""RESPIRATORY""]",5,5,critical,medium,1
+43746,81,f,2029-12-07,2111-01-14,mimic,very_elderly,1,15.9,Emergency,1,Medicare,WHITE,1,4.1,1,117,1,"[""CANCER"", ""HYPERTENSION"", ""RENAL""]",3,4,critical,medium,1
+43748,81,m,2099-09-02,2181-02-27,mimic,very_elderly,1,6.0,Emergency,1,Medicare,WHITE,1,4.2,2,62,1,"[""CARDIOVASCULAR"", ""RENAL""]",2,2,high,medium,0
+43779,76,m,2097-01-07,2173-12-24,mimic,elderly,1,2.7,Emergency,1,Medicare,WHITE,1,0.7,0,34,1,"[""CANCER"", ""CARDIOVASCULAR"", ""DIABETES"", ""HYPERTENSION"", ""RENAL"", ""TRAUMA""]",6,8,critical,low,1
+43798,64,m,2136-07-29,2200-12-31,mimic,middle_aged,1,39.7,Elective,0,Private,WHITE,1,7.1,10,143,1,"[""CANCER"", ""CARDIOVASCULAR"", ""DIABETES"", ""HYPERTENSION"", ""RENAL"", ""SEPSIS""]",6,8,critical,high,1
+43870,88,f,2097-05-16,2186-02-12,mimic,very_elderly,1,2.1,Emergency,1,Medicare,WHITE,1,2.3,1,66,1,"[""CARDIOVASCULAR"", ""DIABETES"", ""HYPERTENSION"", ""NEUROLOGICAL""]",4,5,critical,low,1
+43879,55,f,2051-07-25,2107-07-13,mimic,middle_aged,1,1.0,Emergency,1,Medicare,BLACK/AFRICAN AMERICAN,1,1.0,2,31,1,"[""OTHER""]",1,1,low,low,0
+43881,53,m,2051-03-24,2105-02-16,mimic,middle_aged,1,8.1,Emergency,1,Private,WHITE,1,3.2,6,134,2,"[""CANCER"", ""CARDIOVASCULAR"", ""HYPERTENSION"", ""RENAL"", ""RESPIRATORY""]",5,6,critical,medium,1
+43909,78,f,2073-11-22,2152-10-09,mimic,elderly,1,0.1,Emergency,1,Medicare,WHITE,1,0.2,1,38,1,"[""CANCER"", ""CARDIOVASCULAR"", ""DIABETES"", ""RESPIRATORY""]",4,5,critical,low,1
+43927,72,f,2104-02-12,2176-09-09,mimic,elderly,1,4.1,Elective,0,Medicare,WHITE,1,1.3,3,85,1,"[""CARDIOVASCULAR"", ""DIABETES"", ""HYPERTENSION"", ""NEUROLOGICAL"", ""RESPIRATORY""]",5,6,critical,medium,1
+44083,56,m,2057-11-15,2114-02-20,mimic,middle_aged,1,10.0,Emergency,1,Private,WHITE,1,7.6,11,123,3,"[""CANCER"", ""CARDIOVASCULAR"", ""HYPERTENSION""]",3,4,high,high,1
+44212,45,f,2078-06-16,2124-01-29,mimic,middle_aged,1,36.0,Emergency,1,Medicare,BLACK/AFRICAN AMERICAN,1,31.1,7,209,1,"[""HYPERTENSION"", ""RENAL"", ""SEPSIS""]",3,4,high,high,1
+44222,75,m,2107-06-27,2182-08-03,mimic,elderly,1,1.3,Emergency,1,Medicare,WHITE,1,1.3,0,19,1,"[""CARDIOVASCULAR"", ""DIABETES"", ""HYPERTENSION"", ""RENAL""]",4,4,high,low,1
+44228,58,f,2112-10-22,2171-04-14,mimic,middle_aged,1,9.6,Emergency,1,Private,WHITE,1,4.6,3,96,1,"[""CANCER"", ""RESPIRATORY"", ""SEPSIS""]",3,5,critical,medium,1
