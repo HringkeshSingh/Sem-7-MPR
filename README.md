@@ -374,7 +374,10 @@ docker-compose down -v && docker-compose up --build
 
 ## 👥 Team
 
-- **Shrirang Zend** - Lead Developer
+- **Hringkesh Singh** - Lead Developer
+- **Shrirang Zend** - Assistant Developer
+- **Meet Raut** - Assistant Developer
+- **Amit Shinde** - Assistant Developer
 - **Contributors** - See [CONTRIBUTORS.md](CONTRIBUTORS.md)
 
 ## 📄 License
