@@ -35,7 +35,7 @@ class RAGCore:
         embedding_model: str = "sentence-transformers/all-MiniLM-L6-v2",
         chunk_size: int = 1000,
         chunk_overlap: int = 200,
-        top_k: int = 5
+        top_k: int = 10  # Increased from 5 for more citations
     ):
         """
         Initialize core RAG components.

@@ -53,7 +53,7 @@ class HealthcareRAGSystem:
         chunk_size: int = 1000,
         chunk_overlap: int = 200,
         similarity_threshold: float = 0.7,
-        top_k: int = 5
+        top_k: int = 10  # Increased from 5 for more citations
     ):
         """
         Initialize the RAG system.

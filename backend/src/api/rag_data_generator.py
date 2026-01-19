@@ -725,60 +725,126 @@ class RAGDataGenerator:
         """Collect evidence citations from retrieval."""
         citations = []
         
-        # From RAG system
+        # From RAG system (vectorstore-based retrieval)
         if self.rag_system:
             try:
                 rag_result = self.rag_system.extract_relevant_info(query)
                 
-                for info in rag_result.get('relevant_info', [])[:5]:
+                for info in rag_result.get('relevant_info', [])[:10]:
+                    # Extract source info from metadata
+                    metadata = info.get('metadata', {})
+                    source_name = metadata.get('source', info.get('source', 'Literature'))
+                    title = metadata.get('title', info.get('title', ''))
+                    
+                    # Determine source type from metadata
+                    source_type = 'literature'
+                    source_lower = source_name.lower()
+                    if 'pubmed' in source_lower:
+                        source_type = 'pubmed'
+                    elif 'clinical' in source_lower or 'trial' in source_lower:
+                        source_type = 'clinical_trial'
+                    elif 'who' in source_lower:
+                        source_type = 'who'
+                    elif 'news' in source_lower:
+                        source_type = 'medical_news'
+                    
                     citations.append(EvidenceCitation(
-                        source=info.get('source', 'Unknown'),
-                        source_type='literature',
-                        title=info.get('title', info.get('source', '')),
-                        relevance_score=info.get('relevance_score', 0.0),
+                        source=source_name,
+                        source_type=source_type,
+                        title=title if title else f"Document from {source_name}",
+                        url=metadata.get('url', ''),
+                        relevance_score=info.get('relevance_score', 0.5),
                         excerpt=info.get('content', '')[:200] if info.get('content') else None
                     ))
                     
             except Exception as e:
                 logger.warning(f"Error collecting citations from RAG: {e}")
         
-        # From enhanced RAG
+        # From enhanced RAG (multi-source retrieval with external APIs)
         if self.enhanced_rag:
             try:
                 enhanced_result = self.enhanced_rag.retrieve_and_extract(
                     query,
-                    max_results_per_source=5
+                    max_results_per_source=10  # Increased from 5
                 )
                 
-                for doc in enhanced_result.get('documents', [])[:5]:
-                    source_type = doc.get('source', 'literature').lower()
-                    if 'pubmed' in source_type:
+                # FIXED: Use 'source_documents' key, not 'documents'
+                source_docs = enhanced_result.get('source_documents', [])
+                
+                for doc in source_docs[:15]:  # Allow more before dedup
+                    # Handle both dict format and object format
+                    if isinstance(doc, dict):
+                        source_name = doc.get('source', 'Unknown')
+                        title = doc.get('title', '')
+                        url = doc.get('url', '')
+                        content = doc.get('content', '')
+                        relevance = doc.get('relevance_score', 0.5)
+                    else:
+                        # Object with attributes
+                        source_name = getattr(doc, 'source', 'Unknown')
+                        title = getattr(doc, 'title', '')
+                        url = getattr(doc, 'url', '')
+                        content = getattr(doc, 'content', '')
+                        relevance = getattr(doc, 'relevance_score', 0.5)
+                    
+                    # Determine source type
+                    source_lower = source_name.lower()
+                    if 'pubmed' in source_lower:
                         source_type = 'pubmed'
-                    elif 'clinical' in source_type or 'trial' in source_type:
+                    elif 'clinical' in source_lower or 'trial' in source_lower:
                         source_type = 'clinical_trial'
-                    elif 'who' in source_type:
+                    elif 'who' in source_lower:
                         source_type = 'who'
+                    elif 'news' in source_lower or 'medline' in source_lower:
+                        source_type = 'medical_news'
+                    else:
+                        source_type = 'literature'
                     
                     citations.append(EvidenceCitation(
-                        source=doc.get('source', 'Unknown'),
+                        source=source_name,
                         source_type=source_type,
-                        title=doc.get('title', ''),
-                        url=doc.get('url', ''),
-                        relevance_score=doc.get('relevance_score', 0.0),
-                        excerpt=doc.get('content', '')[:200] if doc.get('content') else None
+                        title=title if title else f"Result from {source_name}",
+                        url=url,
+                        relevance_score=relevance,
+                        excerpt=content[:200] if content else None
+                    ))
+                
+                # Also check 'relevant_info' from enhanced RAG
+                for info in enhanced_result.get('relevant_info', [])[:10]:
+                    metadata = info.get('metadata', {})
+                    source_name = metadata.get('source', 'Literature')
+                    
+                    # Skip if we already have many citations
+                    if len(citations) >= 20:
+                        break
+                    
+                    citations.append(EvidenceCitation(
+                        source=source_name,
+                        source_type='literature',
+                        title=metadata.get('title', f"Document from {source_name}"),
+                        url=metadata.get('url', ''),
+                        relevance_score=info.get('relevance_score', 0.5),
+                        excerpt=info.get('content', '')[:200] if info.get('content') else None
                     ))
                     
             except Exception as e:
                 logger.warning(f"Error collecting citations from enhanced RAG: {e}")
         
-        # Deduplicate by source
+        # Deduplicate by normalized title (case-insensitive, trimmed)
         seen = set()
         unique_citations = []
         for c in citations:
-            key = (c.source, c.title)
-            if key not in seen:
+            # Normalize key: lowercase title, source type combo
+            title_key = c.title.lower().strip()[:50] if c.title else ""
+            key = (c.source_type, title_key)
+            
+            # Allow different sources with same title (e.g., same article from PubMed vs cached)
+            if key not in seen or not title_key:
                 seen.add(key)
                 unique_citations.append(c)
+        
+        # Sort by relevance score and return top 10
+        unique_citations.sort(key=lambda x: x.relevance_score, reverse=True)
         
         return unique_citations[:10]
     

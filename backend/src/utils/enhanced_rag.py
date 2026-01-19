@@ -167,7 +167,7 @@ class EnhancedRAGSystem:
             'summary': rag_result.get('summary', ''),
             'confidence': confidence,
             'sources': source_summary,
-            'source_documents': [doc.to_dict() for doc in documents[:10]],
+            'source_documents': [doc.to_dict() for doc in documents[:20]],  # Increased from 10
             'num_documents_retrieved': len(documents),
             'num_sources_queried': len(source_summary.get('by_source', {})),
             'processing_time': elapsed_time,
